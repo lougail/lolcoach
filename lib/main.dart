@@ -12,26 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "LolCoach",
-      debugShowCheckedModeBanner: false,
+      title: 'LolCoach',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF0E4C92),
-          brightness: Brightness.dark,
-        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.primary,
-          title: const Text("LolCoach"),
-          centerTitle: true,
-        ),
-        body: const Center(
-          child: Text(
-            "Bienvenue sur LolCoach",
-            style: TextStyle(fontSize: 24),
-          ),
+      home: const Scaffold(
+        body: Center(
+          child: Text('LolCoach - En cours de développement'),
         ),
       ),
     );

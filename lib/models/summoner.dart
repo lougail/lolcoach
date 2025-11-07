@@ -1,14 +1,14 @@
 class Summoner {
-  final String id;
+  final String? id;  // Optionnel (pas toujours retourné par l'API)
   final String puuid;
-  final String name;
+  final String? name;  // Optionnel (pas toujours retourné par l'API)
   final int profileIconId;
   final int summonerLevel;
 
   Summoner({
-    required this.id,
+    this.id,
     required this.puuid,
-    required this.name,
+    this.name,
     required this.profileIconId,
     required this.summonerLevel,
   });
